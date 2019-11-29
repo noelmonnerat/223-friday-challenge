@@ -1,9 +1,13 @@
 language: java
 
+# safelist
+branches:
+  only:
+    - develop
+
 jobs:
   include:
     - stage: SonarCloud
-      if: branch=master
       script: ./gradlew sonarqube
 addons:
   sonarcloud:
