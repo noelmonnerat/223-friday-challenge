@@ -16,6 +16,12 @@ public class CarController {
         this.carService = carService;
     }
 
+    @GetMapping("/{numberPlate}")
+    public ResponseEntity<Car> findCarWithNumPlate(@PathVariable String numberPlate){
+        Car car = carService.findCarWithNumPlate(numberPlate);
+        return new ResponseEntity<>(car, HttpStatus.OK);
+    }
+
     @PostMapping
     public ResponseEntity<Car> createCar(@RequestBody Car car){
         Car newCar = carService.createCar(car);
