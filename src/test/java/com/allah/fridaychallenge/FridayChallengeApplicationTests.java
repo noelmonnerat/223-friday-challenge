@@ -8,6 +8,7 @@ class FridayChallengeApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.printf("test");
 	}
 
 }
