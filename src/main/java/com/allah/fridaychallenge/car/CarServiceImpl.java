@@ -6,6 +6,11 @@ import org.springframework.stereotype.Service;
 public class CarServiceImpl implements CarService {
 
     @Override
+    public Car findCarWithNumPlate(String numberPlate) {
+        return null;
+    }
+
+    @Override
     public Car createCar(Car car) {
         return null;
     }
