@@ -22,4 +22,11 @@ public class CarController {
         return new ResponseEntity<>(car, HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/{numberPlate}")
+    public ResponseEntity<Car> deleteCar(@PathVariable String numberPlate){
+        Car deletedCar = carService.deleteCar(numberPlate);
+        return new ResponseEntity<>(deletedCar, HttpStatus.NO_CONTENT);
+    }
+
+
 }

@@ -9,4 +9,10 @@ public class CarServiceImpl implements CarService {
     public Car createCar(Car car) {
         return null;
     }
+
+    @Override
+    public Car deleteCar(String numberPlate) {
+        return null;
+    }
+
 }
