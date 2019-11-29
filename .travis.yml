@@ -1,0 +1,14 @@
+language: java
+
+jobs:
+  include:
+    - stage: SonarCloud
+      script: ./gradlew sonarqube
+addons:
+  sonarcloud:
+    organization: $SONAR_USER
+    token:
+      secure: $SONAR_TOKEN
+
+jdk:
+  - openjdk11
