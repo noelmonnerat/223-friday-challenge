@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Table(name = "parking_space")
 public class ParkingSpace extends ExtendedEntity {
 
-  @Column(name = "parking_nr")
-  private int parkingNumber;
+    @Column(name = "parking_nr")
+    private int parkingNumber;
 
 }
