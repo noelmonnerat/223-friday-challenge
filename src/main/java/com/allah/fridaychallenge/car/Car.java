@@ -1,13 +1,27 @@
-package com.allah.fridaychallenge;
+package com.allah.fridaychallenge.car;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.allah.fridaychallenge.generic.ExtendedEntity;
 
-@SpringBootApplication
-public class FridayChallengeApplication {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
-    public static void main(String[] args) {
-        SpringApplication.run(FridayChallengeApplication.class, args);
+@Entity
+@Table(name = "car")
+public class Car extends ExtendedEntity {
+
+    @Column
+    private String numberPlate;
+
+    @Column
+    private String brand;
+
+    @Column
+    private String model;
+
+    public Car(String numberPlate, String brand, String model) {
+        this.numberPlate = numberPlate;
+        this.brand = brand;
+        this.model = model;
     }
-
 }
