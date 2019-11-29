@@ -1,4 +1,7 @@
 package com.allah.fridaychallenge.parkingspace;
 
-public class ParkingSpaceServiceImpl {
+import org.springframework.stereotype.Service;
+
+@Service
+public class ParkingSpaceServiceImpl implements ParkingSpaceService {
 }
