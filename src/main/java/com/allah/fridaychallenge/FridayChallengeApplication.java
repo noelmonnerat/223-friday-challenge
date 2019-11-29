@@ -1,13 +1,15 @@
-package com.allah.fridaychallenge;
+package com.allah.fridaychallenge.car;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+public class Car {
+	private String uuid;
+	private String numberPlate;
+	private String brand;
+	private String model;
 
-@SpringBootApplication
-public class FridayChallengeApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(FridayChallengeApplication.class, args);
+	public Car(String uuid, String numberPlate, String brand, String model) {
+		this.uuid = uuid;
+		this.numberPlate = numberPlate;
+		this.brand = brand;
+		this.model = model;
 	}
-
 }
