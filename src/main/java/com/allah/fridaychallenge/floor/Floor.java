@@ -19,13 +19,13 @@ public class Floor extends ExtendedEntity {
 
     private HashMap<ParkingSpace, Car> parkings;
 
-    public int getFloor_nr() {
-        return floor_nr;
-    }
-
     public Floor(int floor_nr, int parking_space_id) {
         this.floor_nr = floor_nr;
         this.parking_space_id = parking_space_id;
+    }
+
+    public int getFloor_nr() {
+        return floor_nr;
     }
 
     public void setFloor_nr(int floor_nr) {
@@ -38,5 +38,13 @@ public class Floor extends ExtendedEntity {
 
     public void setParking_space_id(int parking_space_id) {
         this.parking_space_id = parking_space_id;
+    }
+
+    public HashMap<ParkingSpace, Car> getParkings() {
+        return parkings;
+    }
+
+    public void setParkings(HashMap<ParkingSpace, Car> parkings) {
+        this.parkings = parkings;
     }
 }
