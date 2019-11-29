@@ -1,6 +1,10 @@
 package com.allah.fridaychallenge.floor;
 
-public class Floor {
+import com.allah.fridaychallenge.generic.ExtendedEntity;
+
+public class Floor extends ExtendedEntity {
+
+
 
 
 
