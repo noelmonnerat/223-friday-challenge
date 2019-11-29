@@ -3,6 +3,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
 	id 'war'
+	id "org.sonarqube" version "2.8"
 }
 
 group = 'com.allah'
@@ -11,6 +12,11 @@ sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
+}
+sonarqube {
+	properties {
+		property "sonar.projectKey", "noelmonnerat_223-friday-challenge"
+	}
 }
 
 dependencies {
