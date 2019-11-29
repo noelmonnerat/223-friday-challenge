@@ -19,7 +19,7 @@ public class CarController {
     @PostMapping
     public ResponseEntity<Car> createCar(@RequestBody Car car){
         Car newCar = carService.createCar(car);
-        return new ResponseEntity<>(car, HttpStatus.CREATED);
+        return new ResponseEntity<>(newCar, HttpStatus.CREATED);
     }
 
     @DeleteMapping("/{numberPlate}")
